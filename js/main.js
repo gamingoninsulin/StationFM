@@ -20,7 +20,7 @@ $(document).ready(function() {
   $volumeSlider.val(0.5); // Set slider to 50%
 
   // Fetch stations data
-  $.getJSON('/data/stations.json', function(stationsData) {
+  $.getJSON('./data/stations.json', function(stationsData) {
     // Render station cards
     function renderStations() {
       const stations = stationsData.stations;
