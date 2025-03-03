@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Station Player</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/navbar_footer.css">
+  <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+  <div class="container">
+    <!-- <h1>Radio Player</h1> -->
+    
+    <header>
+      <div class="logo">Station FM</div>
+      <ul class="navigation">
+          <li><a href="index.html">RADIO</a></li>
+          <!-- <li><a href="#shop">SHOP</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#review">REVIEWS</a></li>
+          <li><a href="#contact">CONTACT</a></li> -->
+      </ul>
+      <div class="hamburger">
+          <i class="fa-solid fa-bars on" id="on"></i>
+      </div>
+      <div class="alert">
+          <ul class="navigation1">
+              <i class='bx bxs-x-circle close'></i>
+              <li><a href="index.html" class="out">HOME</a></li>
+              <!-- <li><a href="#shop" class="out">SHOP</a></li>
+              <li><a href="#about" class="out">ABOUT</a></li>
+              <li><a href="#review" class="out">REVIEWS</a></li>
+              <li><a href="#contact" class="out">CONTACT</a></li> -->
+          </ul>
+          </i>
+      </div>
+  </header>
+    
+    <div id="player-controls" class="player-controls">
+      <div class="player-info">
+        <img id="current-station-image" src="./img/no-music.png" alt="Station Image" class="station-thumbnail">
+        <div class="station-details">
+          <h3 id="current-station-name"></h3>
+          <p>Now Playing</p>
+        </div>
+      </div>
+      
+      <div class="player-buttons">
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+        <button id="mute-button" class="control-button">
+          <svg id="volume-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <svg id="mute-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+        
+        <button id="play-pause-button" class="control-button primary">
+          <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <svg id="pause-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="stations-container" class="stations-grid"></div>
+  
+  </div>
+  
+  <audio id="audio-player"></audio>
+  
+  <div id="footer">
+    <p>&copy; 2025 Station FM | <a href="https://gamingoninsulin.github.io/GamingOnInsulin/">GamingOnInsulin</a></p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/jquery.js"></script>
+</body>
+</html>
