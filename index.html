@@ -15,13 +15,14 @@
     <!-- <h1>Radio Player</h1> -->
     
     <header>
-      <div class="logo">Station FM</div>
+      <div class="logo">
+         <img src="./img/logo.png" style="border: solid 2px black;" width="100px" height="auto" alt="station fm logo" id="logo">
+        <span>Station FM</span>
+        </div>
       <ul class="navigation">
-          <li><a href="index.html">RADIO</a></li>
-          <!-- <li><a href="#shop">SHOP</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#review">REVIEWS</a></li>
-          <li><a href="#contact">CONTACT</a></li> -->
+        <li><a href="#radio">RADIO</a></li>
+        <li><a href="#about_section">ABOUT</a></li>
+        <li><a href="#contact_section">CONTACT</a></li>
       </ul>
       <div class="hamburger">
           <i class="fa-solid fa-bars on" id="on"></i>
@@ -29,17 +30,15 @@
       <div class="alert">
           <ul class="navigation1">
               <i class='bx bxs-x-circle close'></i>
-              <li><a href="index.html" class="out">HOME</a></li>
-              <!-- <li><a href="#shop" class="out">SHOP</a></li>
-              <li><a href="#about" class="out">ABOUT</a></li>
-              <li><a href="#review" class="out">REVIEWS</a></li>
-              <li><a href="#contact" class="out">CONTACT</a></li> -->
+              <li><a href="#radio">RADIO</a></li>
+              <li><a href="#about_section">ABOUT</a></li>
+              <li><a href="#contact_section">CONTACT</a></li>
           </ul>
           </i>
       </div>
   </header>
     
-    <div id="player-controls" class="player-controls">
+    <div id="player-controls radio" class="player-controls">
       <div class="player-info">
         <img id="current-station-image" src="./img/no-music.png" alt="Station Image" class="station-thumbnail">
         <div class="station-details">
@@ -75,8 +74,57 @@
       </div>
     </div>
 
-    <div id="stations-container" class="stations-grid"></div>
+    <div id="stations-container" class="stations-grid">
+      <!-- Leave Empty -->
+    </div>
+    <div id="about_section">
+        <br>
+        <br>
+        <br>
+        <br>
+      <section id="about">
+        <h2>About Station FM</h2>
+        <div style="text-align: center;">
+          <img src="./img/logo.png" style="border: solid 2px black;" width="300px" height="auto" alt="station fm logo" id="logo">
+        </div>
+        <br/>
+        <p>Welcome to Station FM, your premier online radio station aggregator. We've curated a diverse selection of radio stations from around the globe, bringing you a seamless listening experience right at your fingertips. Whether you're in the mood for the latest hits, classic tunes, news updates, or engaging talk shows, Station FM has something for everyone.</p>
+        <br/>
+        <p>Our mission is to connect you with the music and content you love, anytime, anywhere. We understand the power of radio to entertain, inform, and connect people, and we're committed to providing a user-friendly platform that makes discovering and enjoying your favorite stations effortless.</p>
+    <br/>
+        <p>Key features of Station FM include:</p>
+        <ul>
+            <li><strong>Wide Variety of Stations:</strong> Explore a vast collection of radio stations spanning various genres and categories.</li>
+            <li><strong>Easy Navigation:</strong> Our intuitive interface allows you to quickly find and switch between stations.</li>
+            <li><strong>High-Quality Streaming:</strong> Enjoy crystal-clear audio streaming for an immersive listening experience.</li>
+            <li><strong>Regular Updates:</strong> We continuously update our station list to ensure you have access to the latest and greatest content.</li>
+            <li><strong>User-Friendly Controls:</strong> Simple and accessible player controls for seamless playback and volume adjustments.</li>
+        </ul>
+    
+        <p>At Station FM, we value your feedback and strive to enhance your listening experience. If you have any suggestions, questions, or comments, please don't hesitate to contact us. Thank you for choosing Station FM as your online radio destination!</p>
+    </section>
+    </div>
+  <div id="contact_section">
+    <br>
+    <br>
+    <br>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="mailto:gamingoninsulin@gmail.com?subject=Station FM Contact Form" method="post" enctype="text/plain">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
   
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+  
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+  
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+      </form>
+  </section>
+  </div>
   </div>
   
   <audio id="audio-player"></audio>

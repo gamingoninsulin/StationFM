@@ -17,9 +17,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  margin-bottom: 5rem;
 }
 
-h1 {
+h1, h2 {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -195,4 +196,71 @@ h1 {
 
 #volume-slider:hover {
   opacity: 1;
+}
+
+/* Added about and contact styles */
+#about, #contact {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#about li {
+    margin-bottom: 0.5rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-bottom: 0.5rem;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+#contact input[type="submit"],
+#contact input[type="reset"] {
+    padding: 0.75rem 1rem;
+    background-color: #111; /* Match footer and navbar color */
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover,
+#contact input[type="reset"]:hover {
+    text-decoration: underline;
+}
+#contact {
+  background-color:rgb(190, 190, 190);
+  border: solid 1px black;
+
+}
+#about {
+  background-color:rgb(190, 190, 190);
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+  border: solid 1px black;
+  
 }

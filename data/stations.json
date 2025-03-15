@@ -25,6 +25,11 @@
       "url": "https://stream.qmusic.nl/top40/mp3",
       "image": "./img/qmusic.png"
     },
+    "qmusic-90s-00s": {
+      "name": "Q music - 90s & 00s",
+      "url": "https://stream.qmusic.nl/90s-00s/mp3",
+      "image": "./img/qmusic.png"
+    },
 
 
     "radio538": {
@@ -106,12 +111,12 @@
     },
 
 
-    "radionl": {
+    "radio-nl": {
       "name": "Radio NL",
       "url": "https://stream.radionl.fm/radionl",
       "image": "./img/radionl.png"
     },
-    "radionl-kids": {
+    "radio-nl-kids": {
       "name": "Radio NL - Kids",
       "url": "https://stream.radionlkids.nl/rnlkids",
       "image": "./img/radionl.png"
