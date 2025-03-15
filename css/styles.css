@@ -217,46 +217,6 @@ h1, h2 {
     margin-bottom: 0.5rem;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-#contact label {
-    margin-bottom: 0.5rem;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-}
-
-#contact input[type="submit"],
-#contact input[type="reset"] {
-    padding: 0.75rem 1rem;
-    background-color: #111; /* Match footer and navbar color */
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-}
-
-#contact input[type="submit"]:hover,
-#contact input[type="reset"]:hover {
-    text-decoration: underline;
-}
-#contact {
-  background-color:rgb(190, 190, 190);
-  border: solid 1px black;
-
-}
 #about {
   background-color:rgb(190, 190, 190);
   margin-bottom: 0.5rem;
